@@ -7,28 +7,29 @@ import Users from '../Screens/Components/User/User';
 import SettingsStack from './SettingsStack';
 import AppImages from '../Theme/AppImages';
 import {AppContext} from '../AppContext';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 const Tab = createBottomTabNavigator();
 
 const TABS = [
   {
     title: 'Home',
-    icon: AppImages.home,
+    icon: AppImages.homeSolid,
     screen: Home,
   },
+  // {
+  //   title: 'Search',
+  //   icon: AppImages.search,
+  //   screen: Search,
+  // },
   {
-    title: 'Search',
-    icon: AppImages.search,
-    screen: Search,
-  },
-  {
-    title: 'User',
-    icon: AppImages.user,
+    title: 'Controls',
+    icon: AppImages.settings,
     screen: Users,
   },
   {
     title: 'Settings',
-    icon: AppImages.settings,
+    icon: AppImages.userCog,
     screen: SettingsStack,
   },
 ];
